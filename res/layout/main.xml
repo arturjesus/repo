@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
-</LinearLayout>
+<RelativeLayout 
+android:layout_width="match_parent" 
+android:id="@+id/relativeLayout1" 
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="fill_parent">
+
+<TextView 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:textAppearance="?android:attr/textAppearanceMedium" 
+android:id="@+id/textView1" android:text="Introduce el valor Hexadecimal:">
+</TextView>
+<EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/editText1" android:inputType="number" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true">
+    <requestFocus></requestFocus>
+</EditText>
+<Button android:layout_height="wrap_content" android:layout_width="125dp" android:id="@+id/button1" android:text="Convertir!" android:layout_below="@+id/editText1" android:layout_alignParentLeft="true"></Button>
+<Button android:layout_height="wrap_content" android:layout_width="125dp" android:id="@+id/Button01" android:layout_below="@+id/editText1" android:layout_alignParentRight="true" android:text="Borrar"></Button>
+</RelativeLayout>
